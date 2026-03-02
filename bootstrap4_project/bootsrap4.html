@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Academy Cinemas</title>
+
+    <!-- Bootstrap 4 CSS -->
+    <!-- This link imports the Bootstrap framework for styling and layout -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+
+<!-- ================= MAIN CONTAINER ================= -->
+<div class="container">
+
+   <!-- ================= NAVIGATION BAR ================= -->
+<!-- Responsive Bootstrap Navbar with brand logo and collapsible menu -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-info sticky-top">
+
+    <!-- Brand / Logo -->
+    <a class="navbar-brand font-weight-bold" href="#">
+        🎬 Academy Cinemas
+    </a>
+
+    <!-- Mobile Toggle Button -->
+    <!-- This button appears on small screens -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible Menu -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+
+        <!-- Left Side Links -->
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#showtimes">Showtimes</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#deals">Deals</a>
+            </li>
+        </ul>
+
+        <!-- Right Side Search Form -->
+        <form class="form-inline">
+            <input class="form-control mr-2" type="search" placeholder="Search movies">
+            <button class="btn btn-outline-light" type="submit">Search</button>
+        </form>
+
+    </div>
+</nav>
+<!-- ================= END NAVBAR ================= -->
+
+
+    <!-- ================= JUMBOTRON HEADER ================= -->
+    <!-- Bootstrap Jumbotron component used as hero section -->
+    <div class="jumbotron jumbotron-fluid bg-info text-center">
+        <div class="container">
+            <h1 class="display-4 text-light">Academy Cinemas</h1>
+            <p class="lead text-light">Sit back, relax, and enjoy the show</p>
+        </div>
+    </div>
+    <!-- ================= END HEADER ================= -->
+
+
+    <!-- ================= NEW BOOTSTRAP COMPONENT ================= -->
+    <!-- Bootstrap Carousel component added to display featured movies -->
+    <div id="featuredMovies" class="carousel slide mb-5" data-ride="carousel">
+
+        <ol class="carousel-indicators">
+            <li data-target="#featuredMovies" data-slide-to="0" class="active"></li>
+            <li data-target="#featuredMovies" data-slide-to="1"></li>
+            <li data-target="#featuredMovies" data-slide-to="2"></li>
+        </ol>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="img/a.jpg" alt="Beauty and the Beast">
+            </div>
+
+            <div class="carousel-item">
+                <img class="d-block w-100" src="img/b.jpg" alt="Ghost in the Shell">
+            </div>
+
+            <div class="carousel-item">
+                <img class="d-block w-100" src="img/c.jpg" alt="Kong Skull Island">
+            </div>
+        </div>
+
+        <a class="carousel-control-prev" href="#featuredMovies" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#featuredMovies" role="button" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+    <!-- ================= END CAROUSEL ================= -->
+
+
+
+    <!-- ================= ABOUT SECTION ================= -->
+    <!-- This section provides information about the cinema location and accommodations -->
+<div class="container mb-5" id="about">
+    <div class="row align-items-center">
+
+        <!-- Cinema Image -->
+        <!-- Bootstrap img-fluid class makes image responsive -->
+        <div class="col-md-4">
+            <img src="img/d.jpg" class="img-fluid rounded" alt="Academy Cinemas building">
+        </div>
+
+        <!-- Cinema Description -->
+        <div class="col-md-8">
+            <h2 class="mb-3">About Academy Cinemas</h2>
+            <p>
+                Located in beautiful Portland, Oregon’s Pearl District, Academy Cinemas
+                has been entertaining movie lovers since 1959.
+            </p>
+            <p>
+                Our theaters feature state-of-the-art Christie 3D® sound systems
+                and ultra-comfortable reclining seats designed for a premium
+                cinematic experience.
+            </p>
+            <p>
+                We are proud to offer disability-friendly seating arrangements
+                and a welcoming atmosphere for all guests.
+            </p>
+        </div>
+
+    </div>
+</div>
+<!-- ================= END ABOUT SECTION ================= -->
+
+    <!-- ================= SHOWTIMES SECTION ================= -->
+    <!-- Bootstrap Card components used to display movies and showtimes -->
+    <h3 id="showtimes">Showtimes:</h3>
+    <div class="row">
+
+        <div class="col-sm-4">
+            <div class="card">
+                <img class="card-img-top" src="img/c.jpg" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">Kong: Skull Island</h5>
+                    <p class="card-text">A team explores an uncharted island and encounters Kong.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-4">
+            <div class="card">
+                <img class="card-img-top" src="img/b.jpg" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">Ghost in the Shell</h5>
+                    <p class="card-text">A cyber-enhanced soldier fights dangerous criminals.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-4">
+            <div class="card">
+                <img class="card-img-top" src="img/a.jpg" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">Beauty and the Beast</h5>
+                    <p class="card-text">A cursed prince must learn to love to break the spell.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- ================= END SHOWTIMES ================= -->
+
+
+    <!-- ================= MOVIE DEALS SECTION ================= -->
+    <!-- Button triggers a Bootstrap Modal -->
+    <div class="jumbotron bg-info text-center mt-5">
+        <h2 class="text-light">Movie Deals</h2>
+        <button class="btn btn-outline-light" data-toggle="modal" data-target="#register">
+            See Monthly Deals
+        </button>
+    </div>
+
+
+    <!-- ================= REGISTRATION MODAL ================= -->
+    <!-- Bootstrap Modal component used to collect user information -->
+    <div class="modal fade" id="register" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title">Register for Movie Deals</h5>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label>Password</label>
+                            <!-- Tooltip added to password field -->
+                            <input type="password" class="form-control"
+                                data-toggle="tooltip"
+                                title="Passwords are case sensitive.">
+                        </div>
+                    </form>
+                </div>
+
+                <div class="modal-footer">
+                    <button class="btn btn-primary">Save</button>
+                    <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- ================= END MODAL ================= -->
+
+
+    <!-- ================= FOOTER ================= -->
+    <!-- Footer contains contact information -->
+    <div class="text-center my-5">
+        <small>&copy; 2026 Academy Cinemas</small>
+    </div>
+
+</div>
+<!-- ================= END MAIN CONTAINER ================= -->
+
+
+<!-- ================= JAVASCRIPT SECTION ================= -->
+<!-- jQuery must load first -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+
+<!-- Popper.js required for tooltips and popovers -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
+
+<!-- Bootstrap JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
+
+<!-- Activate Tooltip -->
+<script>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+</script>
+
+</body>
+</html>

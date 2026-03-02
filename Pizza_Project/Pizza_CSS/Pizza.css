@@ -1,0 +1,82 @@
+body {
+     background: linear-gradient(135deg, darkblue, midnightblue);
+     margin: 0;
+}
+
+h1 {
+     font-family: Helvetica, Arial, sans-serif;
+     color: white;
+     text-align: center;
+     margin-top: 20px;
+}
+
+h3 {
+     font-family: Arial, sans-serif;
+     color: snow;
+     margin-bottom: 10px;
+}
+
+div {
+     color: lightyellow;
+     font-family: monospace;
+}
+
+#menuBG {
+     width: 700px;
+     min-height: 500px;
+     margin: 30px auto;
+     padding: 20px;
+     background-color: rgba(0, 0, 0, 0.4);
+     border-radius: 10px;
+     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+#frmMenu {
+     width: 100%;
+     display: flex;
+     justify-content: space-between;
+}
+
+.left,
+.center,
+.right {
+     width: 30%;
+     min-height: 200px;
+}
+
+#totalPrice {
+     width: 200px;
+     min-height: 150px;
+     margin-top: 20px;
+     text-align: center;
+     font-size: 18px;
+}
+
+#showText {
+     width: 60%;
+     min-height: 150px;
+     margin-top: 20px;
+}
+
+#cart {
+     margin-top: 20px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+
+#btnorder {
+     width: 120px;
+     height: 45px;
+     border: none;
+     background-color: crimson;
+     color: white;
+     font-size: 16px;
+     border-radius: 5px;
+     cursor: pointer;
+     transition: background 0.3s ease;
+}
+
+#btnorder:hover {
+     background-color: darkred;
+}
